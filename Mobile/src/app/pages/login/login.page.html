@@ -1,50 +1,45 @@
-<ion-content>
+<ion-content fullscreen="true">
     <h3>Login</h3>
-    <div class="formStyle">
-        <form>
-            <ion-list>
-                <ion-item>
-                    <ion-input color="light" type="email" placeholder="Email"></ion-input>
-                </ion-item>
-                <ion-item>
-                    <ion-input color="light" type="password" placeholder="Password"></ion-input>
-                </ion-item>
-                <ion-button color="light" slot="end" fill="clear" href="/forgot-password">Forgot Password?</ion-button>
-                <ion-button class="center" ion-text-center>Connexion</ion-button>
-            </ion-list>
-        </form>
-    </div>
-    <ion-item lines="none">
-        <ion-label color="light" class="ion-text-center">Ou connectez-vous avec</ion-label>
-    </ion-item>
-    <div class="flex ion-text-center">
-        <ion-button color="facebook" shape="round">
+    <form id="container">
+        <ion-list>
+            <ion-item lines="none" class="ion-item">
+                <ion-input color="light" type="email" placeholder="Email"></ion-input>
+            </ion-item>
+            <ion-item lines="none" class="ion-item">
+                <ion-input color="light" type="password" placeholder="Password"></ion-input>
+            </ion-item>
+            <ion-item lines="none">
+                <ion-button fill="clear" color="light" slot="end" routerLink="/forgot-password">Forgot Password?</ion-button>
+            </ion-item>
+        </ion-list>
+        <ion-button color="light" expand="block" shape="round" fill="outline">Sign in</ion-button>
+    </form>
+    <ion-row>
+        <ion-col class="line" size="4">
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+            <ion-button shape="round" size="small">OR</ion-button>
+        </ion-col>
+        <ion-col class="line" size="4">
+        </ion-col>
+    </ion-row>
+
+    <div class="flex">
+        <ion-button color="facebook" size="small" shape="round">
             <ion-icon slot="start" name="logo-facebook"></ion-icon>
             Facebook
         </ion-button>
-        <ion-button color="google" shape="round">
+        <ion-button color="google" size="small" shape="round">
             <ion-icon slot="start" name="logo-google"></ion-icon>
             Google
         </ion-button>
     </div>
-    <ion-item lines="full">
-        <ion-button color="light" fill="clear">Terms of Service and Privacy Policy</ion-button>
+    <ion-item lines="none" class="ion-text-center privacy" size="small">
+        <ion-button fill="clear" routerLink="/profil">Terms of Service and Privacy Policy</ion-button>
     </ion-item>
-
-    <div class="register">
-        <ion-label class="ion-text-center" color="light">
-            New here? <span> <ion-button class="center" href="/registration">Sigin up</ion-button></span>
-        </ion-label>
-    </div>
+    <ion-footer class="ion-no-border">
+        <ion-toolbar>
+            <p>New here? <span routerLink="/registration"> Sigin up</span></p>
+        </ion-toolbar>
+    </ion-footer>
 </ion-content>
-
-<!--
-    <p>page de connexion</p>
-    <ion-button href="/registration">Registration</ion-button>
-
-    <p>page de connexion</p>
-    <ion-button href="/forgot-password">Forgot password</ion-button>
-
-    <p>page de profil</p>
-    <ion-button href="/tabs">profil</ion-button>
--->

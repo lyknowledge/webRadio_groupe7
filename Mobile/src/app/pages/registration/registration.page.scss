@@ -1,3 +1,58 @@
 ion-content {
     --ion-background-color: var(--ion-color-dark);
 }
+
+#container {
+    margin-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+// titre de la page
+h3 {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+ion-item {
+    border-radius: 10px;
+    border-color: rgb(201, 201, 201);
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    ion-input {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+}
+
+ion-button {
+    text-transform: initial;
+}
+
+.privacy {
+    padding-top: 15px;
+}
+
+//Mise en forme du footer de la page
+ion-footer {
+    padding-top: 20px;
+    ion-toolbar {
+        p {
+            text-align: center;
+            padding-bottom: 20px;
+            padding-left: 60px;
+            color: white;
+            font-size: 12px;
+            span {
+                color: blue;
+                font-size: 15px;
+            }
+        }
+    }
+}

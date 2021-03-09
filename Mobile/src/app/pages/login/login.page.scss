@@ -2,43 +2,93 @@ ion-content {
     --ion-background-color: var(--ion-color-dark);
 }
 
-
-/*décaller le formulaire vers le bas
-.padding {
-    padding: 5%!important;
-}*/
-
+// titre de la page
 h3 {
     text-align: center;
     color: white;
     margin-top: 30px;
+    padding-top: 40px;
 }
 
-.formStyle {
-    ion-item {
-        min-height: 2rem;
-        max-height: 4rem;
+// formulaire de connexion
+#container {
+    margin-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+//champs du formulaire
+.ion-item {
+    border-radius: 10px;
+    // --padding-start: 7px;
+    // --inner-padding-end: 0;
+    border-color: rgb(201, 201, 201);
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    ion-input {
+        font-size: 15px;
+        padding-top: 20px;
+        outline: none;
     }
 }
 
-ion-input {
-    border: 1 solid blue;
+ion-button {
+    text-transform: initial;
 }
 
-ion-toolbar {
+.privacy {
+    text-decoration: none;
+    font-size: 10px;
+    color: blue;
     text-align: center;
+    padding-top: 30px;
 }
 
-.center {
-    padding: 2%;
+.flex-start {
+    padding-right: 10px;
+}
+
+a {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.line {
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+ion-row {
+    margin-top: 15px;
 }
 
 .flex {
-    display: block;
-    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
 }
 
-.register {
-    margin-top: 100px;
-    margin-left: 50px;
+//Mise en forme du footer de la page
+ion-footer {
+    padding-top: 20px;
+    ion-toolbar {
+        p {
+            text-align: center;
+            padding-bottom: 20px;
+            padding-left: 100px;
+            color: white;
+            font-size: 12px;
+            span {
+                color: blue;
+                font-size: 15px;
+            }
+        }
+    }
 }

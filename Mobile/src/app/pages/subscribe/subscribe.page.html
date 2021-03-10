@@ -1,9 +1,45 @@
-<ion-header>
-    <ion-toolbar>
-        <ion-title>subscribe</ion-title>
-    </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+    <ion-button class="logoutButton" color="danger" shape="round" size="small" routerLink="/login">
+        Logout
+    </ion-button>
+    <h3>subscribe</h3>
+    <h5>this subscription will allow you</h5>
+    <ol>
+        <li>Listen to music without ads</li>
+        <li> Enjoy the music chosen just for you</li>
+        <li> Add music to your favorites</li>
+    </ol>
+    <p>get premium from <span>4€/mois</span></p>
+    <p class="Privacy" routerLink="/forgot-password">Terms of Service and Privacy Policy</p>
+    <form id="container">
+        <ion-list>
+            <ion-label position="stacked" color="light">Card Number</ion-label>
+            <ion-item lines="none">
+                <ion-input color="light" type="text" placeholder="1179 9088 5241 7041"></ion-input>
+            </ion-item>
+            <ion-row>
+                <ion-col class="flex" size="5">
+                    <ion-label position="stacked" color="light">Date</ion-label>
+                    <ion-item lines="none">
+                        <ion-input color="light" type="text" placeholder="04/23"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="2">
+                </ion-col>
+                <ion-col size="5">
+                    <ion-label position="stacked" color="light">CVV</ion-label>
+                    <ion-item lines="none">
+                        <ion-input color="light" type="text" placeholder="500"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-label position="stacked" color="light">Name on Card</ion-label>
+            <ion-item lines="none">
+                <ion-input color="light" type="text" placeholder="MELINA THOSE"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div class="AddCar">
+            <ion-button shape="round" size="default" routerLink="/forgot-password">Add Card</ion-button>
+        </div>
+    </form>
 </ion-content>

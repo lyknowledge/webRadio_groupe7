@@ -1,0 +1,70 @@
+ion-content {
+    --ion-background-color: var(--ion-color-dark);
+}
+
+.logoutButton {
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 200px;
+    font-size: 9px;
+}
+
+// titre de la page
+h3 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+h5 {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+ol li {
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+p {
+    text-align: center;
+    color: green;
+    padding-top: 5px;
+}
+
+.Privacy {
+    text-align: center;
+    font-size: 10px;
+    color: blue;
+}
+
+#container {
+    margin-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+ion-button {
+    text-transform: initial;
+}
+
+ion-item {
+    border-radius: 10px;
+    border-color: rgb(201, 201, 201);
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+ion-label {
+    font-size: 10px;
+}
+
+.AddCar {
+    padding-left: 35%;
+}

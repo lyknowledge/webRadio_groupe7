@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonTabs } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsPage implements OnInit {
 
+@ViewChild(IonTabs) tabs: IonTabs
+selected = "";
+progress = 42;
   constructor() { }
 
   ngOnInit() {
   }
 
+  //Changer la couleur des boutons
+  setSelectedTab(){
+    this.selected = this.tabs.getSelected();
+  }
 }

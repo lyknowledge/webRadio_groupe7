@@ -1,19 +1,18 @@
-<ion-tabs>
+<ion-tabs #tabs (ionTabsDidChange)="setSelectedTab()">
     <!--la barre de navigation de l'application-->
     <ion-tab-bar slot="bottom">
-
         <ion-tab-button tab="profil">
-            <ion-icon name="person-circle-outline"></ion-icon>
+            <ion-icon [name]="selected == 'profil' ? 'person-circle-outline' : 'person-circle-outline'"></ion-icon>
             <ion-label>Profil</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="radio">
-            <ion-icon name="headset-sharp"></ion-icon>
+            <ion-icon [name]="selected == 'radio' ? 'headset-sharp' : 'headset-sharp'"></ion-icon>
             <ion-label>Radio</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="favorites">
-            <ion-icon name="heart"></ion-icon>
+            <ion-icon [name]="selected == 'radio' ? 'heart' : 'heart'"></ion-icon>
             <ion-label>Favoris</ion-label>
         </ion-tab-button>
 

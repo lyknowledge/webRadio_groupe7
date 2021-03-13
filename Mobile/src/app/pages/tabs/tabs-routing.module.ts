@@ -39,6 +39,11 @@ const routes: Routes = [
           },
         ]
       },
+      {
+        path: '',
+        redirectTo: 'tabs/profil',
+        pathMatch: 'full'
+      },
     ]
   },
 ];

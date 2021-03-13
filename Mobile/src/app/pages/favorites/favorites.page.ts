@@ -42,7 +42,7 @@ export class FavoritesPage implements OnInit {
   currImage: string;
 
 // barre de progression
-progress : number = 0;
+progress : any = 0;
 // Mettre la musique en pause ou pas
 isTouched : boolean = false;
 isPlaying : boolean = false;
@@ -102,10 +102,10 @@ playSong(title: string, singer: string, img: string, song: any){
       this.upNextSubtitle = this.songs[index + 1].singer;
     }
     this.isPlaying = true;
-  });
+  })
 
   this.currSong.addEventListener("timeupdate", () => {
-
+    
     //update some infos as song plays on
     //if ion-range not touched the do update 
     if (!this.isTouched) {
@@ -202,7 +202,6 @@ touchEnd() {
 
 playPrev() {
   var index = this.songs.findIndex(x => x.title == this.currTitle);
-
   if (index == 0) {
     var lastIndex = this.songs.length - 1;
     this.playSong(this.songs[lastIndex].title, this.songs[lastIndex].singer, this.songs[lastIndex].img, this.songs[lastIndex].path);

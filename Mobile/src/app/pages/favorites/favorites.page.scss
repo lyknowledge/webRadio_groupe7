@@ -1,6 +1,7 @@
-// ion-content {
-//     --ion-background-color: var(--ion-color-darck);
-// }
+ion-content {
+    --ion-background-color: var(--ion-color-dark);
+}
+
 * {
     font-weight: bold;
 }
@@ -15,6 +16,13 @@ ion-item {
         h2,
         p {
             font-weight: bold;
+        }
+        h2 {
+            color: white;
+        }
+        p {
+            color: wheat;
+            font-size: 12px;
         }
     }
 }
@@ -31,6 +39,7 @@ ion-item {
 }
 
 #fullPlayer {
+    // --ion-background-color: var(--ion-color-dark);
     transition: 0.5s;
     position: fixed;
     width: 100%;

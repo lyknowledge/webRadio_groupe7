@@ -60,22 +60,22 @@
     </ion-item>
 
     <!-- Play Previous Button -->
-    <ion-button fill="clear" mode="mb" (click)="playPrev()">
+    <ion-button fill="clear" mode="md" (click)="playPrev()">
         <ion-icon name="play-skip-back-outline" style="font-size: 30px;"></ion-icon>
     </ion-button>
 
     <!-- Play Button -->
-    <ion-button fill="clear" mode="mb" *ngIf="!isPlaying" (click)="play()">
+    <ion-button fill="clear" mode="md" *ngIf="!isPlaying" (click)="play()">
         <ion-icon name="play" style="font-size: 40px;"></ion-icon>
     </ion-button>
 
     <!-- Pause Button -->
-    <ion-button fill="clear" mode="mb" *ngIf="isPlaying" (click)="pause()">
-        <ion-icon name="pause" style="font-size: 40px;"></ion-icon>
+    <ion-button fill="clear" mode="md" *ngIf="isPlaying" (click)="pause()">
+        <ion-icon name="pause" style="font-size: 40px;  color: green;"></ion-icon>
     </ion-button>
 
     <!-- Play Next Button -->
-    <ion-button fill="clear" mode="mb" (click)="playNext()">
+    <ion-button fill="clear" mode="md" (click)="playNext()">
         <ion-icon name="play-skip-forward-outline" style="font-size: 30px;"></ion-icon>
     </ion-button>
 
@@ -112,17 +112,17 @@
         </ion-label>
 
         <!-- Play Button -->
-        <ion-button (click)="play()" mode="mb" fill="clear" *ngIf="!isPlaying">
+        <ion-button (click)="play()" mode="md" fill="clear" *ngIf="!isPlaying">
             <ion-icon name="play" style="font-size: x-large;"></ion-icon>
         </ion-button>
 
         <!-- Pause Button -->
-        <ion-button (click)="pause()" mode="mb" fill="clear" *ngIf="isPlaying">
+        <ion-button (click)="pause()" mode="md" fill="clear" *ngIf="isPlaying">
             <ion-icon name="pause" style="font-size: x-large;"></ion-icon>
         </ion-button>
 
         <!-- Cancel Song Button -->
-        <ion-button (click)="cancel()" mode="mb" fill="clear">
+        <ion-button (click)="cancel()" mode="md" fill="clear">
             <ion-icon name="close" style="font-size: x-large;"></ion-icon>
         </ion-button>
     </ion-item>

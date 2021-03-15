@@ -12,4 +12,9 @@ export class SubscribePage implements OnInit {
   ngOnInit() {
   }
 
+
+  logout(){
+    
+  }
+
 }

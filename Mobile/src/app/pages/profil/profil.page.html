@@ -9,14 +9,14 @@
         <div class="button">
             <ion-row>
                 <ion-col size="2">
-                    <ion-button class="Button" shape="round" size="small" routerLink="/tabs/favorites">
+                    <ion-button class="Button" type="submit" shape="round" size="small" routerLink="/login">
                         Buills
                     </ion-button>
                 </ion-col>
                 <ion-col size="2">
                 </ion-col>
                 <ion-col size="2">
-                    <ion-button class="Button" shape="round" color="danger" size="small" routerLink="/tabs/favorites">
+                    <ion-button class="Button" shape="round" color="danger" size="small" (click)="confirmLogout()">
                         Logout
                     </ion-button>
                 </ion-col>
@@ -52,6 +52,28 @@
                 </ion-col>
             </ion-row>
         </form>
-        <ion-button fill="clear" size="small" class="privacy" routerLink="/login">Terms of Service and Privacy Policy</ion-button>
+    </div>
+    <!-- afficher ou masquer le RGPD-->
+    <div>
+        <ion-button fill="clear" size="small" (click)="open()" class="privacy">Terms of Service and Privacy Policy</ion-button>
+    </div>
+
+    <!--Background overlay-->
+    <div class="bg" (click)="close()"></div>
+
+    <!--Bottom Sheet-->
+    <div class="bottomSheet" (touchmove)="touchMove($event)" (touchend)="touchEnd()">
+
+        <!--Short Line at tp of the Bottom Sheet-->
+        <div class="swipe-handler"></div>
+
+        <!-- Bottom Sheet Content-->
+        <div class="content">
+            <h5>Descriptive paragraph</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos aspernatur molestiae deleniti facilis eum repellat similique, perferendis minus? Ea provident impedit facere earum exercitationem totam repellat. Quo,
+                <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam obcaecati, distinctio eaque iste consectetur ratione dolor unde optio consequatur eum veniam natus itaque molestiae quam. Quasi aperiam vel unde.
+                <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam obcaecati, distinctio eaque iste consectetur ratione dolor unde optio consequatur eum veniam natus itaque molestiae quam. Quasi aperiam vel unde.
+            </p>
+        </div>
     </div>
 </ion-content>

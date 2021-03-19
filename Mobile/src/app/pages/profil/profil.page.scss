@@ -12,7 +12,7 @@ ion-content {
     border-radius: 50%;
     border: 2px solid white;
     top: 20%;
-    height: 90px;
+    height: 120px;
     left: 20%;
     transform: translate(-50%, -50%);
 }
@@ -20,11 +20,11 @@ ion-content {
 .name p {
     color: white;
     margin-top: 100px;
-    margin-left: 120px;
+    margin-left: 145px;
 }
 
 #container {
-    margin-top: 10px;
+    margin-top: 20px;
     padding-left: 7px;
     padding-right: 7px;
 }
@@ -32,7 +32,7 @@ ion-content {
 .button {
     color: white;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 105px;
 }
 
 .Button {
@@ -59,8 +59,11 @@ ion-button {
     text-transform: initial;
 }
 
-ion-row .validate {
-    padding-top: 0;
+ion-row.validate {
+    padding-left: 120px;
+    .Cancel {
+        margin-left: 1px;
+    }
 }
 
 .privacy {
@@ -77,6 +80,13 @@ ion-row .validate {
 
 ion-title,
 ion-buttom {
+    font-weight: bold;
+}
+
+.RDPG {
+    text-align: center;
+    color: blue;
+    font-size: large;
     font-weight: bold;
 }
 
@@ -130,10 +140,4 @@ ion-buttom {
     background-color: rgba($color: #000000, $alpha: 0.4);
     z-index: 10;
     transition: 0.3s;
-}
-
-// message pour le boite d'alert de confirmation de déconnexion
-.my-custom-class {
-    --backdrop-opacity: 0.2;
-    --background: linear-gradient(90deg, rgba(165, 255, 192, 1) 1%, rgba(0, 212, 255, 1) 100%);
 }

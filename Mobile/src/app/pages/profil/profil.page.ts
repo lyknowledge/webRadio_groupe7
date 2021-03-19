@@ -9,6 +9,9 @@ import Swal from 'sweetalert2';
 })
 export class ProfilPage implements OnInit {
 
+  // tableau des factures
+  factures: Array<any> = []
+
   // Current positon of the swipe
   currentPosition: any;
   //height of the bottom sheet div
@@ -17,6 +20,8 @@ export class ProfilPage implements OnInit {
   minimumThreshold: any;
   //Starting position of the swipe
   startPosition: any; 
+
+  
   constructor(public alertController : AlertController) { }
 
   ngOnInit() {

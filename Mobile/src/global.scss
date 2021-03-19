@@ -32,8 +32,11 @@
 /* Styliser mon fichier */
 
 .my-custom-class {
-    --backdrop-opacity: 0.2;
-    --background: linear-gradient(90deg, rgba(165, 255, 192, 1) 1%, rgba(0, 212, 255, 1) 100%);
     padding-left: 10px;
     padding-right: 10px;
+}
+
+ion-content,
+ion-header {
+    --ion-background-color: linear-gradient(90deg, rgba(165, 255, 192, 1) 1%, rgba(0, 212, 255, 1) 100%);
 }

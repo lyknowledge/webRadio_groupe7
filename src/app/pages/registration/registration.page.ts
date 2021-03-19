@@ -20,16 +20,10 @@ export class RegistrationPage implements OnInit {
   constructor(public alertController : AlertController) { }
 
   ngOnInit() {
-    //close bottom Sheet on loading the page
     this.close();
   }
 
 
-   // Ouvir le RGPD
-   open(){
-    (<HTMLStyleElement>document.querySelector(".bottomSheet")).style.bottom = "0px";
-    (<HTMLStyleElement>document.querySelector(".bg")).style.display = "block";
-  }
 
   close(){
     this.currentPosition = 0;
@@ -41,6 +35,13 @@ export class RegistrationPage implements OnInit {
     // Hide Background Overlay
     (<HTMLStyleElement>document.querySelector(".bg")).style.display = "none";
 
+  }
+
+  
+   // Ouvir le RGPD
+   open(){
+    (<HTMLStyleElement>document.querySelector(".bottomSheet")).style.bottom = "0px";
+    (<HTMLStyleElement>document.querySelector(".bg")).style.display = "block";
   }
 
   // On Swiping the bottom Sheet
@@ -73,6 +74,4 @@ export class RegistrationPage implements OnInit {
       this.close();
     }
   }
-
-
 }

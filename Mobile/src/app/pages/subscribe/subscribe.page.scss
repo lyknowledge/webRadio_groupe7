@@ -3,17 +3,19 @@ ion-content {
 }
 
 .logoutButton {
-    padding: 0;
     margin-top: 40px;
-    margin-left: 200px;
-    font-size: 9px;
+    margin-left: 300px;
+    font-size: 15px;
 }
 
 // titre de la page
 h3 {
     text-align: center;
     color: white;
-    margin-top: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 h5 {
@@ -24,8 +26,9 @@ h5 {
 
 ol li {
     color: white;
-    font-size: 12px;
-    padding-top: 10px;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-left: 10px;
 }
 
 p {
@@ -34,10 +37,12 @@ p {
     padding-top: 5px;
 }
 
-.Privacy {
-    text-align: center;
-    font-size: 10px;
-    color: blue;
+ion-button {
+    .Privacy {
+        font-size: 15px;
+        color: blue;
+        padding-left: 80px;
+    }
 }
 
 #container {
@@ -62,9 +67,9 @@ ion-item {
 }
 
 ion-label {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .AddCar {
-    padding-left: 28%;
+    padding-left: 35%;
 }

@@ -32,6 +32,74 @@ export class FavoritesPage implements OnInit {
     singer: "Soprano & Black-M",
     img: "../assets/images/Soprano.PNG",
     path: "../assets/songs/soprano.mp3"
+    },
+    {title: "Maintenant",
+    singer: "Tal & Dry",
+    img: "../assets/images/tal.PNG",
+    path: "../assets/songs/tal.mp3"
+    }
+    ,
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    }
+
+
+    ,
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    }
+    ,
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    }
+    ,
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    }
+    ,
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    }
+    ,
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    },
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    },
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    },
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    },
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
+    },
+    {title: "Maintenant",
+    singer: "Rihanna & TI",
+    img: "../assets/images/rihanna.PNG",
+    path: "../assets/songs/rihanna.mp3"
     }
     ];
 

@@ -1,14 +1,10 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>favorites</ion-title>
+        <ion-title>favorite</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-    <ion-list-header>
-        <ion-label>Songs</ion-label>
-    </ion-list-header>
 
     <ion-item lines="none" *ngFor="let  song of songs" (click)=" playSong(song.title, song.singer, song.img, song.path) ">
         <ion-thumbnail slot="start">
@@ -19,7 +15,6 @@
             <p>{{song.singer}}</p>
         </ion-label>
     </ion-item>
-
 </ion-content>
 
 <!--Full Player view-->
@@ -98,7 +93,6 @@
         </ion-label>
     </ion-item>
 </div>
-
 
 <!--Minized Player View-->
 <ion-toolbar id="miniPlayer">
